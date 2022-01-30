@@ -26,23 +26,25 @@ noremap <Up> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 noremap <Down> <Nop>
-set clipboard+=unnamedplus
+" set clipboard+=unnamedplus TODO - NOT WORKING AS EXPECTED
 set backspace=indent,eol,start
 
 " COLORS
 colorscheme torte
 syntax enable
-set colorcolumn=80
+set colorcolumn=81
 highlight ColorColumn ctermbg=darkgrey guibg=darkgrey ctermfg=red guifg=red
 
 " FINDING FILES
 set path+=**
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " FILE BROWSING
 let g:netrw_banner=0
 let g:netrw_browse_split=4
 let g:netrw_preview=1
 let g:netrw_altv=1
+let g:netrw_winsize=80
 let g:netrw_liststyle=3
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
