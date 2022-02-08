@@ -32,8 +32,10 @@ set backspace=indent,eol,start
 " COLORS
 colorscheme torte
 syntax enable
-set colorcolumn=81
-highlight ColorColumn ctermbg=darkgrey guibg=darkgrey ctermfg=red guifg=red
+let &colorcolumn=join(range(81,999), ",")
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
+let g:js_context_colors=1
+let g:js_context_colors_enabled=1
 
 " FINDING FILES
 set path+=**
