@@ -21,6 +21,7 @@ let mapleader=","
 set noswapfile
 set hlsearch
 set ignorecase
+set smartcase
 set incsearch
 noremap <Up> <Nop>
 noremap <Left> <Nop>
