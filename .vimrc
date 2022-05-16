@@ -1,12 +1,13 @@
 set nocompatible
 
 " MANAGING INDENTATION
+filetype indent on
 set softtabstop=4
 set shiftwidth=4
 set tabstop=4
+set expandtab
 set shiftround
 set autoindent
-filetype indent on
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 set number
