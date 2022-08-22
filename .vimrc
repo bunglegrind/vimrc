@@ -42,6 +42,7 @@ let g:js_context_colors_enabled=1
 " FINDING FILES
 set path+=**
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+set wildignore+=*.o,*.obj,*.map,*/node_modules/*
 
 " FILE BROWSING
 let g:netrw_banner=0
