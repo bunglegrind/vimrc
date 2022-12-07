@@ -8,6 +8,7 @@ set tabstop=4
 set expandtab
 set shiftround
 set autoindent
+set fileformats=unix,dos
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 set number
