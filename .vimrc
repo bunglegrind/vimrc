@@ -18,6 +18,7 @@ set laststatus=2
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y\ (line\ %l\/%L,\ col\ %c)\ 
 set nobackup
 set wildmenu
+set encoding=utf-8
 inoremap jk <ESC>
 let mapleader=","
 set noswapfile
