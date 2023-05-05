@@ -10,6 +10,10 @@ set shiftround
 set autoindent
 set fileformats=unix,dos
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+" enable list mode
+set list
+" display chars for tabs and trailing spaces
+set listchars=tab:> ,trail:-,nbsp:·
 
 set number
 set cursorline
