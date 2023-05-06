@@ -15,7 +15,7 @@ set encoding=utf-8
 " enable list mode
 set list
 " display chars for tabs and trailing spaces
-set listchars=tab:> ,trail:-,nbsp:·
+set listchars=tab:<->,trail:-,nbsp:·
 
 set number
 set cursorline
