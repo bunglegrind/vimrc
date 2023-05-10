@@ -1,4 +1,5 @@
 set nocompatible
+set wak=no
 
 " MANAGING INDENTATION
 filetype indent on
@@ -36,6 +37,14 @@ noremap <Up> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 noremap <Down> <Nop>
+inoremap <C-k>a' <A-a>
+inoremap <C-k>e' <A-e>
+inoremap <C-k>i' <A-i>
+inoremap <C-k>o' <A-o>
+inoremap <C-k>u' <A-u>
+inoremap <C-k>e` <A-E>
+inoremap <C-k>o` <A-O>
+
 " set clipboard+=unnamedplus TODO - NOT WORKING AS EXPECTED
 set backspace=indent,eol,start
 
