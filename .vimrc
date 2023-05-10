@@ -37,13 +37,22 @@ noremap <Up> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 noremap <Down> <Nop>
-inoremap <C-k>a' <A-a>
-inoremap <C-k>e' <A-e>
-inoremap <C-k>i' <A-i>
-inoremap <C-k>o' <A-o>
-inoremap <C-k>u' <A-u>
-inoremap <C-k>e` <A-E>
-inoremap <C-k>o` <A-O>
+
+" ITALIAN ACCENTED CHARS
+inoremap <M-a> <C-k>a`
+inoremap <M-'> <C-k>a`
+inoremap <M-e> <C-k>e`
+inoremap <M-[> <C-k>e`
+inoremap <M-i> <C-k>i`
+inoremap <M-=> <C-k>i`
+inoremap <M-o> <C-k>o`
+inoremap <M-;> <C-k>o`
+inoremap <M-u> <C-k>u`
+inoremap <M-\> <C-k>u`
+inoremap <M-E> <C-k>e'
+inoremap <M-{> <C-k>e'
+inoremap <M-O> <C-k>o'
+inoremap <M-:> <C-k>o'
 
 " set clipboard+=unnamedplus TODO - NOT WORKING AS EXPECTED
 set backspace=indent,eol,start
