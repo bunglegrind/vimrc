@@ -38,21 +38,15 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 noremap <Down> <Nop>
 
+let mapleader = " "
 " ITALIAN ACCENTED CHARS
-inoremap <M-a> <C-k>a`
-inoremap <M-'> <C-k>a`
-inoremap <M-e> <C-k>e`
-inoremap <M-[> <C-k>e`
-inoremap <M-i> <C-k>i`
-inoremap <M-=> <C-k>i`
-inoremap <M-o> <C-k>o`
-inoremap <M-;> <C-k>o`
-inoremap <M-u> <C-k>u`
-inoremap <M-\> <C-k>u`
-inoremap <M-E> <C-k>e'
-inoremap <M-{> <C-k>e'
-inoremap <M-O> <C-k>o'
-inoremap <M-:> <C-k>o'
+inoremap a<C-'> <C-k>a`
+inoremap e<C-'> <C-k>e`
+inoremap i<C-'> <C-k>i`
+inoremap o<C-'> <C-k>o`
+inoremap u<C-'> <C-k>u`
+inoremap e<C-`> <C-k>e'
+inoremap o<C-`> <C-k>o'
 
 " set clipboard+=unnamedplus TODO - NOT WORKING AS EXPECTED
 set backspace=indent,eol,start
@@ -80,3 +74,11 @@ let g:netrw_liststyle=3
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
+" USEFUL MAPPINGS
+nnoremap - ddp
+nnoremap _ ddkP
+inoremap <c-u> <esc>viwUea
+nnoremap <c-u> viwUe
+nnoremap <leader>d diw
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
