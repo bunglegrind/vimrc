@@ -27,7 +27,7 @@ set nobackup
 set wildmenu
 set encoding=utf-8
 inoremap jk <ESC>
-let mapleader=","
+set scrolloff=1
 set noswapfile
 set hlsearch
 set ignorecase
