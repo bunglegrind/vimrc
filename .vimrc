@@ -30,6 +30,7 @@ inoremap jk <ESC>
 set scrolloff=1
 set noswapfile
 set hlsearch
+set hidden
 set ignorecase
 set smartcase
 set incsearch
@@ -75,10 +76,9 @@ let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 " USEFUL MAPPINGS
-nnoremap - ddp
-nnoremap _ ddkP
-inoremap <c-u> <esc>viwUea
 nnoremap <c-u> viwUe
 nnoremap <leader>d diw
+nnoremap <leader>c ciw
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>/ :noh<cr>
