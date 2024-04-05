@@ -9,6 +9,7 @@ set tabstop=4
 set expandtab
 set shiftround
 set autoindent
+set cindent
 set fileformats=unix,dos
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 scriptencoding utf-8
@@ -40,14 +41,6 @@ noremap <Right> <Nop>
 noremap <Down> <Nop>
 
 let mapleader = " "
-" ITALIAN ACCENTED CHARS
-inoremap a<C-'> <C-k>a`
-inoremap e<C-'> <C-k>e`
-inoremap i<C-'> <C-k>i`
-inoremap o<C-'> <C-k>o`
-inoremap u<C-'> <C-k>u`
-inoremap e<C-`> <C-k>e'
-inoremap o<C-`> <C-k>o'
 
 " set clipboard+=unnamedplus TODO - NOT WORKING AS EXPECTED
 set backspace=indent,eol,start
@@ -65,20 +58,12 @@ set path+=**
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 set wildignore+=*.o,*.obj,*.map,*/node_modules/*
 
-" FILE BROWSING
-let g:netrw_banner=0
-let g:netrw_browse_split=4
-let g:netrw_preview=1
-let g:netrw_altv=1
-let g:netrw_winsize=80
-let g:netrw_liststyle=3
-let g:netrw_list_hide=netrw_gitignore#Hide()
-let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-
 " USEFUL MAPPINGS
 nnoremap <c-u> viwUe
 nnoremap <leader>d diw
 nnoremap <leader>c ciw
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
+noremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>/ :noh<cr>
+
+:source ~/vimfiles/jslint_wrapper_vim.vim
