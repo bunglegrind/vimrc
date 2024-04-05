@@ -9,7 +9,6 @@ set tabstop=4
 set expandtab
 set shiftround
 set autoindent
-set cindent
 set fileformats=unix,dos
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
 scriptencoding utf-8
@@ -22,6 +21,7 @@ set listchars=tab:<->,trail:-,nbsp:·
 set number
 set cursorline
 filetype plugin on
+runtime macros/matchit.vim
 set laststatus=2
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y\ (line\ %l\/%L,\ col\ %c)\ 
 set nobackup
@@ -65,5 +65,6 @@ nnoremap <leader>c ciw
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 noremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>/ :noh<cr>
+
 
 :source ~/vimfiles/jslint_wrapper_vim.vim
