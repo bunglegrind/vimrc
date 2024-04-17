@@ -69,12 +69,8 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 set wildignore+=*.o,*.obj,*.map,*/node_modules/*
 
 " USEFUL MAPPINGS
-nnoremap <c-u> viwUe
-nnoremap <leader>d diw
-nnoremap <leader>c ciw
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 noremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>/ :noh<cr>
-
 
 :source ~/vimfiles/jslint_wrapper_vim.vim
