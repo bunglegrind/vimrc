@@ -10,6 +10,8 @@ set wak=no
 " repeat
 " vim-vinegar
 
+packadd! matchit
+
 " MANAGING INDENTATION
 filetype indent on
 set softtabstop=4
