@@ -1,5 +1,14 @@
 set nocompatible
 set wak=no
+" PLUGINS
+"
+" fugitive
+" surround
+" commentary
+" matchit
+" unimpaired
+" repeat
+" vim-vinegar
 
 " MANAGING INDENTATION
 filetype indent on
@@ -18,23 +27,24 @@ set list
 " display chars for tabs and trailing spaces
 set listchars=tab:<->,trail:-,nbsp:·
 
+set showmode
 set number
 set cursorline
 filetype plugin on
-runtime macros/matchit.vim
 set laststatus=2
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y\ (line\ %l\/%L,\ col\ %c)\ 
 set nobackup
 set wildmenu
 set encoding=utf-8
 inoremap jk <ESC>
-set scrolloff=1
+set scrolloff=5
 set noswapfile
 set hlsearch
 set hidden
 set ignorecase
 set smartcase
 set incsearch
+set gdefault
 noremap <Up> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
