@@ -74,5 +74,8 @@ set wildignore+=*.o,*.obj,*.map,*/node_modules/*
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 noremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>/ :noh<cr>
+nnoremap <leader>yy "*yy
+nnoremap <leader>yw "*yiw
+nnoremap <leader>yG mmgg"*yG`m
 
 :source ~/vimfiles/jslint_wrapper_vim.vim
